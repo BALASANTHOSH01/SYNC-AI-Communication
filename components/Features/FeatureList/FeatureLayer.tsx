@@ -1,14 +1,14 @@
 import { BellIcon } from '@/components/ReusableComponents/IconList';
 import React from 'react';
 
-const FeatureLayer = ({ title, items }) => {
+const FeatureLayer = ({ title, items }:any) => {
   return (
     <div className="bg-[#141414] text-white text-center rounded-[30px] shadow-lg space-y-4 my-3 lg:w-[200px]  2xl:w-[300px] py-4 relative z-50">
 
       <h2 className="text-md font-bold">{title}</h2>
       
       <div className="space-y-2 text-[14px] text-start px-3 border-t-[1px] mx-auto z-50 relative py-[10%]">
-        {items.map((item, index) => (
+        {items.map((item:any, index:any) => (
           <div key={index} className='flex flex-col items-center my-2 z-50 relative'>
 
             <div className={`flex ${item.text === "Sync ID" ? "text-center justify-center py-[10%]" : " gap-2 items-center"} border border-[#44dbf5] border-b-gray-400 w-full rounded-[10px] p-2 z-50 relative`}>
