@@ -1,27 +1,26 @@
 // components/CentralIcon.js
 import React from 'react';
 import Image from 'next/image';
-import CoinImage from '@/assets/Features/IconImage.png'; // Update this path to the actual image path
+import CoinImage from '@/assets/Features/IconImage.png'; // Update this path to the actual image path// Update this path to the actual image path
 
-const NodeBude = () => {
+const NodeBud = () => {
   return (
-    <div className=" flex items-center justify-center h-[80vh] w-[45%] z-50 relative">
-
-      <div className="relative w-[150px] h-[150px]">
-        
-        <div className="absolute inset-0 rounded-full bg-black flex items-center justify-center">
-          <div className="absolute w-[180px] h-[180px] rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 blur-lg"></div>
-          <div className="absolute w-[160px] h-[160px] rounded-full bg-black flex items-center justify-center z-10">
-            <Image src={CoinImage} alt="Center Icon" width={140} height={140} />
+    <div className="relative flex items-center justify-center h-dvh z-10">
+      <div className="relative">
+        <div className="absolute inset-0 rounded-full bg-[#121212] flex items-center justify-center">
+          <div className="absolute w-[80px] h-[80px] md:w-[120px] md:h-[120px] 2xl:w-[160px] 2xl:h-[160px] rounded-full bg-[#121212] flex items-center justify-center z-10">
+            <Image src={CoinImage} alt="Center Icon" width={100} height={100} md={150} lg={200} />
           </div>
         </div>
-        <div className="absolute w-full h-full rounded-full border-4 border-gray-800 animate-ping"></div>
+        <div className="absolute w-full h-full rounded-full border-4 border-gray-800 animate-pulse"></div>
       </div>
-      <div className="absolute w-[270px] h-[270px] border-[70px] border-gray-700 rounded-full"></div>
-      <div className="absolute w-[300px] h-[300px] border-[4px] border-gray-600 rounded-full"></div>
-      <div className="absolute w-[310px] h-[310px] border-[4px] border-gray-600 rounded-full"></div>
+      <div className="absolute w-[135px] h-[135px] md:w-[200px] md:h-[200px] 2xl:w-[270px] 2xl:h-[270px] border-[40px] md:border-[60px] 2xl:border-[80px] border-gray-800 rounded-full"></div>
+      <div className="absolute w-[165px] h-[165px] md:w-[250px] md:h-[250px] 2xl:w-[330px] 2xl:h-[330px] border-[2px] md:border-[3px] 2xl:border-[4px] border-gray-800 rounded-full"></div>
+      <div className="absolute w-[180px] h-[180px] md:w-[270px] md:h-[270px] 2xl:w-[360px] 2xl:h-[360px] border-[2px] md:border-[3px] 2xl:border-[4px] border-gray-800 rounded-full"></div>
     </div>
   );
 };
 
-export default NodeBude;
+export default NodeBud;
+
+

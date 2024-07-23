@@ -16,7 +16,7 @@ const Consortium = () => {
         <div className='bg-gradient-to-b from-transparent to-[--darkBg] w-[100%] 2xl:h-[35vh] xl:h-[40vh] lg:h-[60vh] blur-sm absolute lg:bottom-[-100px] 2xl:bottom-[-90px]'></div>
       </div>
 
-      <div className=' justify-center flex flex-row items-center text-[20px] mx-aut0 gap-3 relative z-50'>
+      <div className=' justify-center flex flex-row items-center text-[20px] mx-aut0 gap-3 relative z-50 cursor-pointer hover:text-[#35a1c0]'>
         <div className=' p-2 rounded-[50%] border text-[--primaryBlue]'>
           <RightArrow />
         </div>

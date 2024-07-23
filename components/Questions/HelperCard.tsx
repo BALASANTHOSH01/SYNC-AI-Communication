@@ -1,8 +1,7 @@
 import React from 'react'
 import { PlusIcon, SubtractionIcon } from '../ReusableComponents/IconList'
 
-
-const HelperCard = () => {
+const HelperCard = ({contentIs,handleGeneralFAQ,handleWebsiteFAQ}:any) => {
   return (
     <div className='w-[220px] h-[220px] text-white bg-[--consotiumTableBG] rounded-[20px] mt-[3%] relative'>
       <div className=' flex flex-col gap-5 py-[8%] p-3 '>
@@ -10,16 +9,21 @@ const HelperCard = () => {
 
         <hr className='h-[1px]' />
 
-        <div className='ml-[2%] flex flex-row items-center justify-between'>
+        <div className='ml-[2%] flex flex-row items-center justify-between relative z-50'>
           <p>General FAQ </p>
-          <SubtractionIcon />
+          {
+            contentIs === "generalfaq" ? <SubtractionIcon className='cursor-pointer' onClick={()=>handleGeneralFAQ("websitefaq")}/> : <PlusIcon className='cursor-pointer' onClick={()=>handleWebsiteFAQ("generalfaq")}/>
+          }
+          
         </div>
 
         <hr className='h-[1px]' />
 
-        <div className='ml-[2%] flex flex-row items-center justify-between'>
+        <div className='ml-[2%] flex flex-row items-center justify-between relative z-50'>
           <p>Website & XP</p>
-          <PlusIcon />
+          {
+            contentIs === "websitefaq" ? <SubtractionIcon className='cursor-pointer' onClick={()=>handleGeneralFAQ("generalfaq")}/> : <PlusIcon className='cursor-pointer' onClick={()=>handleWebsiteFAQ("websitefaq")}/>
+          }
         </div>
 
 

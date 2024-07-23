@@ -9,7 +9,7 @@ const NavBar = () => {
     <div>
         <div className='flex flex-row items-center justify-between px-[4%] py-[1%] bg-transparent duration-200 z-50'>
             {/** Icons */}
-            <div className=' w-[10%] z-50 relative'>
+            <div className=' w-[10%] z-50 relative cursor-pointer'>
                 <Image src={favicon} width={50} height={50} alt='IconImage'/>
             </div>
             {/** NavBar Items */}
