@@ -1,9 +1,13 @@
+'use client'
+
 import React from "react";
 import { Button } from "../Index";
 import { GradientContainer } from "../ReusableComponents";
 import Image from "next/image";
 import HeroImg from "../../assets/Hero/HeroImg.png";
-import PlayIcon from "../../assets/Hero/playIcon.png"
+import PlayIcon from "../../assets/Hero/playIcon.png";
+
+
 const Hero = () => {
     return (
         <div className=" relative">
@@ -14,19 +18,20 @@ const Hero = () => {
                 <p>with built-in SocialFi.</p>
             </div>
             <div className=" flex flex-row items-center gap-2 justify-center text-[15px] my-[2%]">
-                <Button text="Whitepaper" />
-                <Button text="Synced Club" />
+                <Button className="hover:bg-[--featureIcon] duration-300 hover:shadow-lg" text="Whitepaper" />
+                <Button className="hover:bg-[--featureIcon] duration-300 hover:shadow-lg" text="Synced Club" />
             </div>
 
             {/** Hero Image */}
             <div className="relative z-20">
+
                 <Image
                     src={HeroImg}
                     className="w-[90%] h-[100vh] rounded-[15px] mx-auto"
                     alt="HeroImage"
                 />
 
-                <Image src={PlayIcon} alt="PlayIcon" className="absolute top-[45%] left-[48%] w-[7%]" />
+                    <Image src={PlayIcon} alt="PlayIcon" className="absolute top-[45%] left-[48%] w-[7%] cursor-pointer"/>
             </div>
 
             {/** Gradient  */}

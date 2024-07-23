@@ -12,15 +12,16 @@ const FeatureBoard = () => {
             <SmallGradient innerClass=" " outerClass=" " />
             <p className=' text-gray-400 font-semibold absolute left-[5%]'>Our Features</p>
 
-            <div className='relative text-[50px] text-end px-[5%] z-50'>
-                <p>SyncAI   is  an  unified   Social-Fi</p>
-                <p>architecture  with  abstract  programming</p>
-                <p>bringing a new age of user-centric  experience</p>
+            <div className='relative text-[50px] text-end px-[5%] z-50 tracking-tighter'>
+                <p>SyncAI is an unified <span className='ml-[2%]'>Social-Fi</span></p>
+                <p className='mt-[-25px]'>architecture with abstract programming</p>
+                <p className='mt-[-25px]'>bringing a new age of user-centric experience</p>
             </div>
 
-            <BentoGrid/>
 
-            
+            <BentoGrid />
+
+
             <div className=" relative my-[10%]">
                 <Image src={FeatureBGImg} alt="FeatureBackground" className=" object-cover grayscale-[50%]" />
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
