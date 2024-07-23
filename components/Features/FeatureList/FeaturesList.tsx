@@ -16,12 +16,14 @@ import {
   FaTelegram as Telegram,
 } from "react-icons/fa6";
 import NodeFeatureList from "../../../assets/Features/NodeFeatureList.svg";
+import { useParallax } from "react-scroll-parallax";
 
 const FeatureList: React.FC = () => {
+
   return (
     <div className="relative h-auto">
-      <div className="pb-10">
-        <p className="text-4xl text-center text-white">
+      <div className="pb-10" >
+        <p className="text-4xl text-center text-white" >
           Sync Node <br />
           The building blocks <br />
           <span className="bg-gradient-to-b from-[#F2f2f2] to-[#888888] bg-clip-text text-transparent">
@@ -30,7 +32,7 @@ const FeatureList: React.FC = () => {
           </span>
         </p>
       </div>
-      <div className="relative">
+      <div className="relative" >
         <NodeBud />
         <div className="absolute top-0 flex w-full justify-between px-16 2xl:px-[10%] h-full">
           <div className="flex flex-col items-end z-10 2xl:gap-20 justify-around">

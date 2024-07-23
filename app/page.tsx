@@ -1,3 +1,5 @@
+'use client'
+
 import Consortium from "@/components/Consortium/Consortium";
 import FeatureBoard from "@/components/Features/FeatureBoard/FeatureBoard";
 import FeaturesList from "@/components/Features/FeatureList/FeaturesList";
@@ -8,11 +10,13 @@ import Questions from "@/components/Questions/Questions";
 import { GradientContainer } from "@/components/ReusableComponents";
 import TeamOfSyncAI from "@/components/TeamOfSyncAI/TeamOfSyncAI";
 import Image from "next/image";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
     <div className=" bg-[var(--darkBg)] text-white overflow-hidden">
         {/* <GradientContainer/> */}
+        <ParallaxProvider>
      <NavBar/>
      <Hero/>
      <FeatureBoard/>
@@ -21,6 +25,7 @@ export default function Home() {
      <TeamOfSyncAI/>
      <Questions/>
      <Footer/>
+     </ParallaxProvider>
     </div>
   );
 }
