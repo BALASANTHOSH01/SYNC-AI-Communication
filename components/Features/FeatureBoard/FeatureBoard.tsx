@@ -9,13 +9,10 @@ import Image from 'next/image';
 import { FeatureBGImg } from '@/assets/Features';
 import { RightArrow } from '@/components/ReusableComponents/IconList';
 import { BtnTap } from '@/components/ReusableComponents/animateFunctions';
-import { animated } from 'react-spring';
+
 
 const FeatureBoard = () => {
     
-        // Tap animation Function
-        const { props, handleTap } = BtnTap();
-
     return (
         <div className='my-[10%] relative'>
             <SmallGradient innerClass=" " outerClass=" " />

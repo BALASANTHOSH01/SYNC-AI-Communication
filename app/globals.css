@@ -17,3 +17,38 @@
 body{
   overflow-x: hidden;
 }
+
+@keyframes waveLeftToRight {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes waveRightToLeft {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.leftGradient {
+  animation: waveLeftToRight 3s infinite ease-in-out;
+}
+
+.rightGradient {
+  animation: waveRightToLeft 3s infinite ease-in-out;
+}
+
+
+
