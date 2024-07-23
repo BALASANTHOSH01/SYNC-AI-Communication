@@ -1,31 +1,26 @@
-import { BellIcon } from '@/components/ReusableComponents/IconList';
-import React from 'react';
+import React from "react";
 
-const FeatureLayer = ({ title, items }:any) => {
+const FeatureLayer = ({ layer } :any) => {
   return (
-    <div className="bg-[#141414] text-white text-center rounded-[30px] shadow-lg space-y-4 my-3 lg:w-[200px]  2xl:w-[300px] py-4 relative z-50">
-
-      <h2 className="text-md font-bold">{title}</h2>
-      
-      <div className="space-y-2 text-[14px] text-start px-3 border-t-[1px] mx-auto z-50 relative py-[10%]">
-        {items.map((item:any, index:any) => (
-          <div key={index} className='flex flex-col items-center my-2 z-50 relative'>
-
-            <div className={`flex ${item.text === "Sync ID" ? "text-center justify-center py-[10%]" : " gap-2 items-center"} border border-[#44dbf5] border-b-gray-400 w-full rounded-[10px] p-2 z-50 relative`}>
-
-              {/** Icon */}
-              <div className="p-2 rounded-full relative">
-                {(item.icon === BellIcon && item.text !== "Sync ID") && (
-                  <div className='absolute w-[8px] h-[8px] right-[25%] top-[20%] rounded-full bg-blue-500 opacity-60'></div>
-                )}
-
-                {item.text !== "Sync ID" && <item.icon className="w-5 h-5 text-blue-500" />}
-
+    <div className="flex p-10">
+      <div className="text-white bg-[#151515] p-4 rounded-3xl">
+        <div className="border-b py-3 border-slate-500">
+          {layer.title && <h1 className="text-center 2xl:text-2xl">{layer.title}</h1>}
+        </div>
+        <div>{layer.items.header && <p>{layer.items.header}</p>}</div>
+        {layer.items.map((item:any, index:any) => (
+          <div key={index}>
+            {item.header && (
+              <div className="pt-2 ">
+                <p className="text-start text-sm 2xl:text-md">{item.header}</p>
               </div>
-
-              {/** Text */}
-              {item.text === "Sync ID" ? <p className='text-[20px]'>{item.text}</p> : <p className='text-[12px]'>{item.text}</p>}
-              
+            )}
+            <div className=" bg-gradient-to-b p-[1px] from-blue-500 to-slate-500 rounded-xl my-3">
+              <div className="flex items-center justify-start p-3 gap-1 rounded-xl bg-[#151515]">
+                {/* <div className="text-md 2xl:text-2xl gap-2 text-blue-500">{item.icon}</div> */}
+                <item.icon className="text-md 2xl:text-2xl gap-2 text-blue-500"></item.icon>
+                <p>{item.text}</p>
+              </div>
             </div>
           </div>
         ))}
@@ -35,3 +30,5 @@ const FeatureLayer = ({ title, items }:any) => {
 };
 
 export default FeatureLayer;
+
+

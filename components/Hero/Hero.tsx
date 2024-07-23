@@ -17,9 +17,9 @@ const Hero = () => {
                 <p className="z-50 relative">AI powered Communications layer on top of Cardano</p>
                 <p>with built-in SocialFi.</p>
             </div>
-            <div className=" flex flex-row items-center gap-2 justify-center text-[15px] my-[2%]">
-                <Button className="hover:bg-[--featureIcon] duration-300 hover:shadow-lg" text="Whitepaper" />
-                <Button className="hover:bg-[--featureIcon] duration-300 hover:shadow-lg" text="Synced Club" />
+            <div className=" flex flex-row items-center gap-2 justify-center text-[15px] my-[2%] duration-200">
+                <Button className="hover:bg-[#11accb]" text="Whitepaper" />
+                <Button className="hover:bg-[#11accb] " text="Synced Club" />
             </div>
 
             {/** Hero Image */}
@@ -31,7 +31,7 @@ const Hero = () => {
                     alt="HeroImage"
                 />
 
-                    <Image src={PlayIcon} alt="PlayIcon" className="absolute top-[45%] left-[48%] w-[7%] cursor-pointer"/>
+                <Image src={PlayIcon} alt="PlayIcon" className="absolute top-[45%] left-[48%] w-[7%] cursor-pointer" />
             </div>
 
             {/** Gradient  */}
