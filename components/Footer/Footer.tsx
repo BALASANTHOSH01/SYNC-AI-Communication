@@ -4,7 +4,7 @@ import Logo from "@/assets/favicon.ico";
 import { TelegramIcon, WhatsappIcon } from '../ReusableComponents/IconList';
 import SmallGradient from '../ReusableComponents/SmallGradient';
 
-const Gradient = ({innerClass,outerClass}) => {
+const Gradient = ({innerClass,outerClass}:any) => {
     return (
         <div className={`absolute  z-0 ${innerClass} `}>
             <div className={`bg-[radial-gradient(circle,_#163b96_0%,_#163b96_100%)] w-[400px] h-96 blur-[90px] ${outerClass}`}></div>
