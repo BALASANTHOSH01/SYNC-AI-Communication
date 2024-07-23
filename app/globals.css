@@ -2,19 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root{
-  --primaryBlue:#44dbf5;
-  --primaryBlueText:#11accb;
-  --navTextColor:#35a1c0;
-  --darkBg:#121212;
-  --footerBlue:#163b96;
-  --featureGradient:#2c7b86;
-  --featureIcon:#2091ff;
-  --consotiumTableBG:#232425;
+:root {
+  --primaryBlue: #44dbf5;
+  --primaryBlueText: #11accb;
+  --navTextColor: #35a1c0;
+  --darkBg: #121212;
+  --footerBlue: #163b96;
+  --featureGradient: #2c7b86;
+  --featureIcon: #2091ff;
+  --consotiumTableBG: #232425;
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -50,5 +53,102 @@ body{
   animation: waveRightToLeft 3s infinite ease-in-out;
 }
 
+ {
+  /* Fade anmation**/
+}
+@keyframes fadeOutTop {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
+@keyframes fadeOutBottom {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
+.fade-out-top {
+  animation: fadeOutTop 1s forwards;
+}
+
+.fade-out-bottom {
+  animation: fadeOutBottom 1s forwards;
+}
+
+ {
+  /* Scroll Animation*/
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-top {
+  opacity: 0; /* Ensure elements are hidden initially */
+  animation: slideInTop 1s forwards; /* Change duration as needed */
+}
+
+.animate-bottom {
+  opacity: 0; /* Ensure elements are hidden initially */
+  animation: slideInBottom 1s forwards; /* Change duration as needed */
+}
+
+.animate-left {
+  opacity: 0; /* Ensure elements are hidden initially */
+  animation: slideInLeft 1s forwards; /* Change duration as needed */
+}
+
+.animate-right {
+  opacity: 0; /* Ensure elements are hidden initially */
+  animation: slideInRight 1s forwards; /* Change duration as needed */
+}
+
+.visible {
+  opacity: 1; /* To ensure the element is visible after animation */
+}
