@@ -33,7 +33,7 @@ const TableData = [
   },
 ];
 
-const TableRow = ({ tableData }) => {
+const TableRow = ({ tableData }:any) => {
   return (
     <div>
       <div className=" flex flex-row w-[100%] items-center justify-between px-[5%] my-[2.5%]">

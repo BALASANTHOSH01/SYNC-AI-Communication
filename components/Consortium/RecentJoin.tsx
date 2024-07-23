@@ -24,7 +24,7 @@ const TableData = [
     },
 ]
 
-const TableRow = ({ tableData }) => {
+const TableRow = ({ tableData }:any) => {
     return (
         <div className=' flex flex-row z-50 items-center justify-around my-[5%]'>
             <Image

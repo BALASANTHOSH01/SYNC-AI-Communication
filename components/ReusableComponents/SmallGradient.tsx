@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SmallGradient = ({innerClass,outerClass}) => {
+const SmallGradient = ({innerClass,outerClass}:any) => {
   return (
     <div>
         <div className={` absolute -right-20 -top-20 z-0 ${outerClass}`}>
