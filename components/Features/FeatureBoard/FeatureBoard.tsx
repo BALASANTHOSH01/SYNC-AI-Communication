@@ -26,7 +26,7 @@ const FeatureBoard = () => {
                 <Image src={FeatureBGImg} alt="FeatureBackground" className=" object-cover grayscale-[50%]" />
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-                <div className="absolute top-[3%] lg:left-[21%] xl:left-[20%] 2xl:left-[30%] p-5 z-20">
+                <div className="absolute top-[3%] lg:left-[21%] xl:left-[23%] 2xl:left-[30%] p-5 z-20">
                     <div className="text-[40px]  text-white text-center">
                         <p>A new era for dApp-User Interactions</p>
                         <p>Get yourself Synced</p>

@@ -7,10 +7,10 @@ const BentoGrid = () => {
     return (
         <div className=" my-[10%]">
             <div className=" w-[90%] mx-auto flex flex-col gap-3">
-                <div className=" flex flex-row gap-4 items-center">
+                <div className=" flex flex-row gap-4 items-start">
 
-                    <div className=" relative ">
-                        <Image src={FeatureImgOne} alt="" className=" object-cover grayscale-[50%] border-[var(--primaryBlueText)] border-[2px] rounded-3xl" />
+                    <div className=" relative w-[60%] ">
+                        <Image src={FeatureImgOne} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] xl:h-[70vh] 2xl:h-[789px] w-[1247px]" />
 
                         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
@@ -20,11 +20,11 @@ const BentoGrid = () => {
                             <p className="text-[14px]">secured by zkp, which is directly linked to your Cardano public key and Twitter.</p>
                         </div>
                     </div>
-                    <Image src={FeatureImgTwo} alt="" />
+                    <Image src={FeatureImgTwo} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] xl:h-[70vh] 2xl:h-[789px] w-[789px]" />
                 </div>
-                <div className=" flex flex-row gap-4 items-center">
-                    <Image src={FetaureImgThree} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl" />
-                    <Image src={FeatureImgFour} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl" />
+                <div className=" flex flex-row gap-4 items-start">
+                    <Image src={FetaureImgThree} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] xl:h-[70vh] 2xl:h-[789px] w-[1247px]" />
+                    <Image src={FeatureImgFour} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] xl:h-[70vh] 2xl:h-[789px] w-[789px]" />
                 </div>
                 <div className=" flex flex-row gap-4 items-center">
                     <Image src={FeatureImgFive} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] xl:h-[70vh] 2xl:h-[789px] w-[1247px]" />
