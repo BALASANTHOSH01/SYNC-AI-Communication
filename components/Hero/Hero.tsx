@@ -6,9 +6,14 @@ import { GradientContainer } from "../ReusableComponents";
 import Image from "next/image";
 import HeroImg from "../../assets/Hero/HeroImg.png";
 import PlayIcon from "../../assets/Hero/playIcon.png";
+import { BtnTap } from "../ReusableComponents/animateFunctions";
+import { animated } from "react-spring";
 
 
 const Hero = () => {
+    // Tap animation Function
+    const { props, handleTap } = BtnTap();
+
     return (
         <div className=" relative">
 
@@ -25,13 +30,17 @@ const Hero = () => {
             {/** Hero Image */}
             <div className="relative z-20">
 
+                {/** Hero Img */}
                 <Image
                     src={HeroImg}
                     className="w-[90%] h-[100vh] rounded-[15px] mx-auto"
                     alt="HeroImage"
                 />
-
-                <Image src={PlayIcon} alt="PlayIcon" className="absolute top-[45%] left-[48%] w-[7%] cursor-pointer" />
+                
+                {/** Image play Btn */}
+                <animated.div style={props} onClick={handleTap} className="absolute top-[45%] left-[48%] w-[7%] cursor-pointer">
+                    <Image src={PlayIcon} alt="PlayIcon"  />
+                </animated.div>
             </div>
 
             {/** Gradient  */}

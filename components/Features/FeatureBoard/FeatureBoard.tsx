@@ -1,3 +1,6 @@
+
+'use client'
+
 import { GradientContainer } from '@/components/ReusableComponents';
 import SmallGradient from '@/components/ReusableComponents/SmallGradient';
 import React from 'react'
@@ -5,8 +8,14 @@ import BentoGrid from '../BentoGrid/BentoGrid';
 import Image from 'next/image';
 import { FeatureBGImg } from '@/assets/Features';
 import { RightArrow } from '@/components/ReusableComponents/IconList';
+import { BtnTap } from '@/components/ReusableComponents/animateFunctions';
+import { animated } from 'react-spring';
 
 const FeatureBoard = () => {
+    
+        // Tap animation Function
+        const { props, handleTap } = BtnTap();
+
     return (
         <div className='my-[10%] relative'>
             <SmallGradient innerClass=" " outerClass=" " />
@@ -31,12 +40,14 @@ const FeatureBoard = () => {
                         <p>A new era for dApp-User Interactions</p>
                         <p>Get yourself Synced</p>
                     </div>
-                    <div className=" flex flex-row justify-center items-center gap-2 text-[20px] my-[1%] ">
+
+                    <div className=" flex flex-row justify-center items-center gap-2 text-[20px] my-[1%] cursor-pointer">
                         <div className=" border border-white rounded-full p-[6px] text-[var(--primaryBlueText)]">
                             <RightArrow />
                         </div>
                         <p>SYNCED CLUB</p>
                     </div>
+
                 </div>
             </div>
 
