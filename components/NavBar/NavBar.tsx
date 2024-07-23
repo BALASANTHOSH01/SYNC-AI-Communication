@@ -8,7 +8,7 @@ import { LinkedInIcon, FaceBookIcon, TwitterIcon } from "../ReusableComponents/I
 import NavItems from '../ReusableComponents/NavItems';
 
 const NavBar = () => {
-    const [isActive, setIsActive] = useState("Home");
+    const [isActive, setIsActive] = useState<string>("Home");
 
     return (
         <div>

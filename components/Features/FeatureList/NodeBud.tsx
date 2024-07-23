@@ -1,15 +1,14 @@
-// components/CentralIcon.js
 import React from 'react';
 import Image from 'next/image';
-import CoinImage from '@/assets/Features/IconImage.png'; // Update this path to the actual image path// Update this path to the actual image path
+import CoinImage from '@/assets/Features/IconImage.png'; // Update this path to the actual image path
 
-const NodeBud = () => {
+const NodeBud: React.FC = () => {
   return (
     <div className="relative flex items-center justify-center h-dvh z-10">
       <div className="relative">
         <div className="absolute inset-0 rounded-full bg-[#121212] flex items-center justify-center">
           <div className="absolute w-[80px] h-[80px] md:w-[120px] md:h-[120px] 2xl:w-[160px] 2xl:h-[160px] rounded-full bg-[#121212] flex items-center justify-center z-10">
-            <Image src={CoinImage} alt="Center Icon" width={100} height={100} md={150} lg={200} />
+            <Image src={CoinImage} alt="Center Icon" width={100} height={100} />
           </div>
         </div>
         <div className="absolute w-full h-full rounded-full border-4 border-gray-800 animate-pulse"></div>
@@ -22,5 +21,3 @@ const NodeBud = () => {
 };
 
 export default NodeBud;
-
-
