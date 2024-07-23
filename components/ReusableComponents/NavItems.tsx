@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavItems = ({ text, to, className, isActive, setIsActive }) => {
+const NavItems = ({ text, to, className, isActive, setIsActive }:any) => {
     return (
         <a 
             href={`/${to}`} 
